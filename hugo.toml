@@ -1,0 +1,15 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'ananke'
+metaDataFormat = "yaml"  # 使用YAML格式的Front Matter
+
+# 多语言配置（如需要）
+[languages]
+[languages.en]
+title = "English Title"
+weight = 1
+
+[permalinks]
+posts = "/blog/:year/:month/:day/:slug/"  # 按日期组织文章URL
+pages = "/:slug/"  # 普通页面简化URL
